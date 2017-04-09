@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+*{
+    box-sizing: border-box
+}
+img{
+    display: block;
+    max-width: 100%
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6,{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px
+}
+.section_titre{
+    text-align: center;
+    font-size: 40px;
+    color: #fba919;
+}
+/*--------------------header*/
+.header{
+    height: 60px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .icon-menu{
+    margin: 5px;
+    color: #fff;
+}
+.icon-menu{
+    display: block;
+    width: 48px;
+    height: 40px;
+    font-size: 30px;
+    background: #fba919;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*menu*/
+.nav{
+    position: absolute;
+    top:60px;
+    left: -100%;
+    width: 100%;
+   -webkit-transition: all 0.4s;
+   -moz-transition:all 0.4s;
+   transition: all 0.4s; 
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    background: #fba919;
+    text-decoration: none;
+    color: #fff;
+}
+.menu__link:hover, .select{
+background: white;
+color: #fba919;
+}
+.afficher{
+    left: 0;
+}
+
+/*----------banner*/
+
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+.banner_text{
+   display: none;
+}
+.banner .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;   
+}
+
+/*------------main*/
+
+.info_colonne{
+    background: #fba919;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+/*section events*/
+.events_colons{
+    position: relative;
+    margin-bottom: 30px;
+}
+.events_description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+.evennts_titles{
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+/*footer*/
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer .social [class^="icon-"]{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+
